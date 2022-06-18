@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.cards {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        flex-direction: row;
+        height: 100vh;
+        position: relative;
+        left: 20em;
+        width: 50vw;
+    }
+.card {
+    height: 70vh;
+    padding: 40px;
+}
+.one {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    background: hsl(179, 100%, 13%)
+}
+
+.card a {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    text-decoration: none;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
