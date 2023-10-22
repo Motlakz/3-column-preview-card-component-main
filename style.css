@@ -3,38 +3,69 @@
     box-sizing: border-box;
     font-family: 'Lexend Deca', sans-serif;
 }
-.cards {
-        display: flex;
-        align-items: center;
-        color: #fff;
-        flex-direction: row;
-        height: 100vh;
-        position: relative;
-        left: 20em;
-        width: 50vw;
-    }
-.card {
-    height: 70vh;
-    padding: 40px;
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.one {
-    background-color: hsl(31, 77%, 52%);
+.cards {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+.card {
+    padding: 40px;
+    width: 300px;
+}
+.card p {
+    margin-bottom: 30px;
+}
+.one {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: hsl(31, 77%, 52%);
+}
+.one a {
+    color: hsl(31, 77%, 52%);
+}
+.one a:hover {
+    background-color: hsl(31, 77%, 52%);
+}
 .two {
+    background-color: hsl(184, 100%, 22%);
+}
+.two a {
+    color: hsl(184, 100%, 22%);
+}
+.two a:hover {
     background-color: hsl(184, 100%, 22%);
 }
 
 .three {
-    background: hsl(179, 100%, 13%)
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
-
+.three a {
+    color: hsl(179, 100%, 13%);
+}
+.three a:hover {
+    background-color: hsl(179, 100%, 13%);
+}
 .card a {
     background-color: #fff;
     border-radius: 30px;
     padding: 10px;
     text-decoration: none;
 }
+.card a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -42,4 +73,24 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        margin: 20px;
+        height: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .one {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+    .three {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 0;
+    }
 }
